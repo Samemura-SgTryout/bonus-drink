@@ -1,5 +1,9 @@
 class BonusDrink
   def self.total_count_for(amount)
-    amount + amount.pred.abs / 2
+  	drink = amount
+    while (drink < amount + (drink/3))  do
+    	drink += 1
+    end 
+    drink
   end
 end
