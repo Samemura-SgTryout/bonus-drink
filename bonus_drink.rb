@@ -7,3 +7,5 @@ class BonusDrink
     drink
   end
 end
+
+puts BonusDrink.total_count_for(gets.to_i)

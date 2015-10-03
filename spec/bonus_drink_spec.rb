@@ -13,7 +13,11 @@ describe BonusDrink do
   it { expect(BonusDrink.total_count_for(9)).to eq 13 }
   it { expect(BonusDrink.total_count_for(10)).to eq 14 }
   it { expect(BonusDrink.total_count_for(11)).to eq 16 }
-  it { expect(BonusDrink.total_count_for(12)).to eq 17 }
-  it { expect(BonusDrink.total_count_for(13)).to eq 19 }
   it { expect(BonusDrink.total_count_for(100)).to eq 149 }
+  it { expect(BonusDrink.total_count_for(200)).to eq 299 }
+  it { expect(BonusDrink.total_count_for(300)).to eq 449 }
+  it { expect(BonusDrink.total_count_for(400)).to eq 599 }
+  it { expect(BonusDrink.total_count_for(1000)).to eq 1499 }
+  it { expect(BonusDrink.total_count_for(100000)).to eq 149999 }
+
 end
